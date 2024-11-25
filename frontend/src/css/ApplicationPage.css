@@ -1,0 +1,34 @@
+.application-container {
+    margin-top: 50px;
+  }
+  
+  .application-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .application-container .form-label {
+    font-weight: bold;
+  }
+  
+  .application-container .form-control {
+    margin-bottom: 15px;
+  }
+  
+  .application-container .btn {
+    margin-top: 20px;
+  }
+  
+  .application-container .job-details {
+    margin-bottom: 30px;
+  }
+  
+  .application-container .job-details h3 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .application-container .job-details p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
