@@ -6,6 +6,7 @@ const path = require('path');
 const connectDB = require('./config/db');
 
 const userRoutes = require('./routes/userRoutes');
+const jobRoutes = require('./routes/jobRoutes');
 const applicationRoutes = require('./routes/applications');
 const { protect } = require('./middleware/authMiddleware');
 
@@ -18,8 +19,9 @@ app.use(express.json());
 
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, './frontend')));
+
 app.use('/api/jobPosts', protect);
-app.use('/api/jobApplications', protect);
+app.use('/api/jobApplications', protect);
 
 app.use('/api/users', userRoutes);
 app.use('/api/jobPosts', jobRoutes);
